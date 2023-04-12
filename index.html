@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Forecast</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" src="./assets/style.css">
+    </head>
+    <body>
+        <header>
+            <h1> Weather Forecast</h1>
+        </header>
+        <aside>
+        <div class="aside-border">
+        <form id="search" role="search">
+            <input type="search" id="search-bar" name="searchbar" placeholder="search...">
+            <button>Search</button>
+        </form>
+        <div id="search-history" class="search-history">
+            <ul id="history-list">
+            </ul>
+        </div>
+        </div>
+        </aside>
+        <div id="forecast-current" class="currentday">
+            <h2 id="city"></h2>
+            <p id="today-date"></p>
+            <p id="today-forecast"></p>
+        </div>
+        <div id="future-forecast" class="futureforecast">
+            <h2 id="futurecity"></h2>
+            <p id="future-date"></p>
+            <p id=""future-forecast></p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="./assets/script.js"></script>    
+    </body>
+</html>
